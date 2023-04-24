@@ -1,0 +1,854 @@
+
+/* CSS styles */
+
+h1,h2,h3,h4,h5,h6,a {
+  text-transform: uppercase !important;
+}
+
+p {
+  font-family: Trykker, serif !important;
+}
+body {
+  margin: 0;
+  font-family: Unica One, cursive;
+  background-color: #f2f2f2; /* Set background color */
+}
+
+/* Header styles */
+header {
+  background-color: #fff;
+  color: #fff;
+  padding: 0px;
+}
+
+/*nav styles */
+.admin_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  float:right;
+  padding:40px;
+
+}
+
+.admin_bar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.admin_bar li {
+  margin: 0 10px;
+}
+
+.admin_bar a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s; /* Add transition effect on hover */
+}
+
+/* Logo styles */
+
+.logo img, .logo_icon img {
+  filter: saturate(0.65);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.border-right {
+  border-right: 1px solid black;
+}
+
+i {
+/*  color:#f68915;*/
+  color:#66686e;
+  font-size:40px;
+}
+
+.navigation {
+  margin:0;
+  padding:0;
+  background-color:#d58e43;
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.menu-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu-nav li {
+}
+
+.menu-nav a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s; /* Add transition effect on hover */
+  padding: 15px 30px; 
+  margin:0;
+}
+
+.menu-nav a:hover {
+  color: #fff; /* Change text color on hover */
+  background-color: #67696f;
+}
+
+/* Add hover effect to menu items */
+.menu-nav li a {
+  position: relative;
+}
+
+.menu-nav li a:hover::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+
+/* Search Bar Styles */
+
+form {
+  background-color: #fff;
+  width: 300px; 
+  height: 44px;
+  border-radius: 5px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+}
+
+input {
+  all: unset;
+  font: 16px;
+  font-family: Unica One, cursive;
+  color:#000;
+  height: 100%;
+  width:100%;
+  padding: 6px 10px; 
+}
+
+::placeholder {
+  color: #000;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+button i {
+  color: #d58e43 !important;
+  fill: currentColor;
+  padding: 10px;
+  font-size: 25px;
+}
+
+
+/* Banner styles */
+.banner {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("cocktails-1.jpg");
+  background-size: cover;
+  background-position: bottom -180px center  ;
+  text-align: center;
+  color: #fff;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.heading h1 {
+  font-size: 72px;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px #000; /* Add text shadow */
+}
+
+.heading h3 {
+  font-size: 30px;
+  margin: 0;
+  text-shadow: 2px 2px #000;
+}
+
+.logo_icon{
+      display:flex;
+      justify-content:center;
+}
+
+.logo_icon img {
+  width:150px;
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #303030;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+
+/*divider styles*/
+
+.divider {
+  width:8%;
+  height:3px;
+  background-color: #d58e43;
+
+  box-shadow: none;
+  border:none;
+}
+
+/*Create A Cocktail Styles */
+
+.create {
+  padding: 50px;
+  text-align:center;
+}
+
+.create h2 {
+  font-size: 4vw;
+  margin: 0;
+}
+
+.create p {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.create a {
+  text-decoration: none;
+  color: #000;
+}
+
+.create a:hover {
+  color: #d58e43;
+}
+
+#create {
+  margin-top: 0;
+  padding: 10px 50px;
+  display:flex;
+  justify-content: start;
+  justify-content: space-between;
+}
+
+#create h3 {
+  font-size: 2vw;
+  margin: 0;
+}
+
+#create .text-one h3:before{
+  content: "1";
+  position: relative;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #d58e43;
+  top: 0px;
+  border-radius: 50px;
+  font-size:40px;
+  width: 28px;
+  text-align:center;
+}
+
+#create .text-two h3:before{
+  content:"2";
+  position: relative;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #d58e43;
+  top: 0px;
+  border-radius: 50px;
+  font-size:40px;
+  width: 28px;
+  text-align:center;
+}
+
+#create .text-three h3:before{
+  content:"3";
+  position: relative;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #d58e43;
+  top: 0px;
+  border-radius: 50px;
+  font-size:40px;
+  width: 28px;
+  text-align:center;
+}
+
+.text-one p {
+  margin-left: 2vw;
+}
+
+.text-two p {
+  margin-left: 2vw;
+}
+
+.text-three p {
+  margin-left: 2vw;
+}
+
+.search-ingredients {
+  width: 100%;
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  box-shadow: inset 5px 5px 8px rgba(0,0,0,0.2);
+}
+
+.search-ingredients::-webkit-scrollbar {
+  background-color:transparent;
+}
+
+.search-ingredients::-webkit-scrollbar-thumb {
+  background-color:#d58e43;
+  border-radius: 0 10px 10px 0;
+}
+
+.search-ingredients ul {
+  list-style: none;
+  padding: 0;
+}
+
+.search-ingredients a {
+  text-decoration: none;
+  color: #000;
+}
+
+.search-ingredients li {
+  padding: 20px;
+  font-weight: 700;
+  font-size:3vh;
+}
+
+.search-ingredients li:hover {
+  background-color: #fff;
+}
+
+.search-spirits {
+  list-style: none;
+  width: 100%;
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+}
+
+.search-spirits a {
+  text-decoration: none;
+  color: #000;
+}
+
+.search-spirits li {
+  padding: 20px;
+  font-weight: 700;
+  font-size:3vh;
+}
+
+.search-spirits li:hover {
+  background-color: #fff;
+}
+
+.search-liqueurs {
+  list-style: none;
+  width: 100%;
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+}
+
+.search-liqueurs a {
+  text-decoration: none;
+  color: #000;
+}
+
+.search-liqueurs li {
+  padding: 20px;
+  font-weight: 700;
+  font-size:3vh;
+}
+
+.search-liqueurs li:hover {
+  background-color: #fff;
+}
+
+/* spirits css */
+
+.spirits:hover {
+  border-left: 4px solid #303c96;
+  cursor: pointer;
+}
+
+.gin:hover {
+  border-left: 4px solid #303c96;
+  cursor: pointer;
+}
+
+.rum:hover {
+  border-left: 4px solid #303c96;
+  cursor: pointer;
+}
+
+.tequila:hover {
+  border-left: 4px solid #303c96;
+  cursor: pointer;
+}
+
+.vodka:hover {
+  border-left: 4px solid #303c96;
+  cursor: pointer;
+}
+
+.whisky:hover {
+  border-left: 4px solid #303c96;
+  cursor: pointer;
+}
+
+/* liqueurs styles */
+
+.liqueurs:hover {
+  border-left: 4px solid #0cca4a;
+  cursor: pointer;
+}
+
+.chocolate:hover {
+  border-left: 4px solid #0cca4a;
+  cursor: pointer;
+}
+
+.coffee:hover {
+  border-left: 4px solid #0cca4a;
+  cursor: pointer;
+}
+
+.cream:hover {
+  border-left: 4px solid #0cca4a;
+  cursor: pointer;
+}
+
+.fruit:hover {
+  border-left: 4px solid #0cca4a;
+  cursor: pointer;
+}
+
+.herb:hover {
+  border-left: 4px solid #0cca4a;
+  cursor: pointer;
+}
+
+.nut:hover {
+  border-left: 4px solid #0cca4a;
+  cursor: pointer;
+}
+
+/* beer styles */
+
+.beers:hover {
+  border-left: 4px solid #eaba1a;
+  cursor: pointer;
+}
+
+.pilsner:hover {
+  border-left: 4px solid #eaba1a;
+  cursor: pointer;
+}
+
+.ipa:hover {
+  border-left: 4px solid #eaba1a;
+  cursor: pointer;
+}
+
+.blonde:hover {
+  border-left: 4px solid #eaba1a;
+  cursor: pointer;
+}
+
+.cider:hover {
+  border-left: 4px solid #eaba1a;
+  cursor: pointer;
+}
+
+/* wine styles */
+
+.wine:hover {
+  border-left: 4px solid #4f021a;
+  cursor: pointer;
+}
+
+.red:hover {
+  border-left: 4px solid #4f021a;
+  cursor: pointer;
+}
+
+.white:hover {
+  border-left: 4px solid #4f021a;
+  cursor: pointer;
+}
+
+.champagne:hover {
+  border-left: 4px solid #4f021a;
+  cursor: pointer;
+}
+
+/* mixers styles */
+
+.mixers:hover {
+  border-left: 4px solid #f00699;
+  cursor: pointer;
+}
+
+/* other styles */
+
+.others:hover {
+  border-left: 4px solid #ec4003;
+  cursor: pointer;
+}
+
+
+
+.start {
+  margin-top: 0;
+  padding: 10px 50px;
+  display:grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  justify-content: space-around;
+}
+
+.results {
+}
+
+
+.secondary {
+}
+
+
+.bar-list {
+}
+
+
+footer nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+footer nav ul {
+  list-style: none;
+}
+
+.links {
+  display:flex;
+  margin: 0;
+}
+
+.links li  {
+  justify-content: space-evenly;
+  margin: 10px;
+
+  transition: 0.3s ease-in-out;
+}
+
+.links li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+
+}
+
+.links li:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+}
+
+.links li a:hover {
+  color: #d58e43;
+  transition: 0.3s ease-in-out;
+}
+.social {
+  display:flex;
+  padding-right: 10px;
+}
+
+.social li {
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+i:hover {
+  color: #d58e43;
+}
+
+.spiritBrand:hover {
+  border-left: 4px solid #303c96;
+  cursor: pointer;
+}
+
+.spiritBrand:after {
+    content: "Add";
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    left: 1vw;
+    background-color: #006242;
+    padding: 20px;
+    visibility: hidden;
+    top: -6px;
+}
+
+.spiritBrand:hover:after {
+  visibility:visible;
+}
+
+.list:hover {
+  border-left: 4px solid #006242;
+  cursor: pointer;
+}
+
+.list:after {
+    content: "Remove";
+    position: relative;
+    color: black;
+    font-size: 18px;
+    left: 1vw;
+    background-color: red;
+    padding: 20px;
+    visibility: hidden;
+    top: -6px;
+}
+
+.list:hover:after {
+  visibility:visible;
+}
+
+.bar-results {
+  margin-top: 10px; 
+  margin-bottom: 20px;
+  padding-right: 40px;
+  padding-left:80px;
+}
+
+.results-div {
+  background-color: #ccc; 
+  height: 50vh;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: inset 5px 5px 8px rgba(0,0,0,0.2);
+  overflow-x:hidden;
+  overflow-y: scroll;
+  padding-top: 30px;
+}
+.results-div::-webkit-scrollbar {
+  background-color:transparent;
+}
+
+.results-div::-webkit-scrollbar-thumb {
+  background-color:#d58e43;
+  border-radius: 0 10px 10px 0;
+}
+
+.shake {
+  position: relative;
+  width: 22.7vw;
+  background-color: #d58e43;
+  right: 40px;
+  display: inline-block;
+  float: right;
+  border-radius: 0 0 10px 10px;
+  top: -54px;
+  right: 2vw;
+  text-align: center;
+}
+
+.shake button {
+  display: inline-block;
+  width: 100%;
+  font-weight: 900;
+  font-size: 28px;
+  transition: 0.3s all ease-in-out;
+}
+
+.shake button:hover {
+  font-size: 23px;
+
+}
+
+.listed-results {
+  list-style:none;
+  padding: 0px 50px;
+  display:grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  line-height: 1.8;
+
+}
+
+.listed-results ul li {
+  list-style:none;
+}
+
+.single-result {
+  padding: 20px;
+  border-radius: 10px; 
+  margin: 10px;
+  transition: 0.2s all ease-in-out;
+  text-align:center;
+}
+
+.single-result:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 18px rgba(0,0,0,0.3);
+  transform: translateY(-10px);
+
+}
+
+.cocktail_icon {
+  margin-top: 20px;
+  margin-bottom:10px;
+  width: 150px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color:#000;
+}
+
+.ingredients {
+  color:#000;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.directions {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.remove {
+  position: relative;
+  display:flex;
+  top: 0;
+  right: 10px;
+  float: right;
+  background-color: #e61a23;
+  padding: 0px 8px;
+}
+
+.drink_link {
+  text-decoration: none;
+}
+
+.edit {
+  font-size:18px;
+  font-weight: 700;
+  display: inline-block;
+  color: black;
+  background-color: #f68915;
+  padding: 0px 14px;
+  box-shadow: 3px 3px 3px rgb(0 0 0 / 20%);
+  transition: 0.3s box-shadow ease-in-out;
+  width:2vw !important;
+  margin: 20px;
+}
+
+.edit:hover {
+  box-shadow: none;
+  transition: 0.3s box-shadow ease-in-out;
+}
+
+.hiddenDrinkItem {
+  position: absolute;
+  display:flex;
+  justify-content: center;
+  background-color: #cccccc;
+  width: 300px;
+  height: 300px; 
+  border-radius: 10px;
+}
+
+.popup-overlay {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.popup {
+  text-align:center;
+  background-color: white;
+  margin: 5% auto;
+  padding: 20px 20px 60px 20px;
+  border: 1px solid #888;
+  width: 50%;
+/*  height:50%;*/
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.save_success {
+  background-color: #f68915;
+  position: absolute;
+  top: 110px;
+  animation: fade 0.8s ease-in-out;
+}
+
+@keyframes fade {
+  0% {opacity: 1;},
+  100% {opacity: 0}
+}
+
+
+
+
+
+
+
